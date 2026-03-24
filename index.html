@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>必勝客披薩追蹤器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="pizza-spinner">🍕</div>
+        <p id="loader-text">正在接通門市連線中... 0%</p>
+    </div>
+
+    <div class="container">
+        <h1 class="logo">PIZZA HUT TRACKER</h1>
+        
+        <p id="status-text" class="status-msg">正在確認您的美味訂單...</p>
+
+        <div class="progress-steps">
+            <div class="step active" id="step1">訂單接收</div>
+            <div class="step" id="step2">準備中</div>
+            <div class="step" id="step3">烘烤中</div>
+            <div class="step" id="step4">派送中</div>
+        </div>
+
+        <button id="update-btn">更新外送狀態</button>
+
+        <footer>
+            美味值得等待，若有訂單疑問請撥打：<br>
+            <a href="tel:0800276276">0800-276-276</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
